@@ -1,1 +1,196 @@
 /* your code here */
+/* General page styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #00d084; /* bright green background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Product section styling */
+.product {
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 850px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Product photo section */
+.product__photo {
+  flex: 1;
+  background: linear-gradient(#a8e063, #56ab2f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo-main {
+  position: relative;
+  background: #eaffea;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-main img {
+  max-width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.photo-main img:hover {
+  transform: scale(1.05);
+}
+
+/* Icons (share/heart) */
+.controls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.controls i {
+  margin-left: 10px;
+  font-size: 18px;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.controls i:hover {
+  color: #ff5252;
+}
+
+/* Thumbnail album */
+.photo-album ul {
+  display: flex;
+  margin-top: 15px;
+  padding: 0;
+  list-style: none;
+}
+
+.photo-album ul li {
+  margin: 0 5px;
+}
+
+.photo-album ul li img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border 0.3s;
+}
+
+.photo-album ul li img:hover {
+  border: 2px solid #4caf50;
+}
+
+/* Product info section */
+.product__info {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title h1 {
+  font-size: 28px;
+  margin: 0;
+  color: #333;
+}
+
+.title span {
+  font-size: 14px;
+  color: #888;
+}
+
+.price {
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #e53935;
+}
+
+.price span {
+  font-size: 28px;
+}
+
+/* Variant section */
+.variant h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.variant ul {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+.variant ul li {
+  margin-right: 10px;
+}
+
+.variant ul li img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  cursor: pointer;
+  transition: border 0.3s;
+}
+
+.variant ul li img:hover {
+  border: 2px solid #333;
+}
+
+/* Benefits section */
+.description h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.description ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Add to cart button */
+button.add-to-cart {
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #ff5252;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button.add-to-cart:hover {
+  background: #e53935;
+}
